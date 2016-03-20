@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="VBox"
+         xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox>
+            <children>
+                <ImageView fx:id="iconImageView" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true"
+                           preserveRatio="true"/>
+                <VBox alignment="CENTER_LEFT">
+                    <children>
+                        <HBox alignment="CENTER_LEFT">
+                            <children>
+                                <AnchorPane HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="timeLabel" layoutX="203.0" text="5m" AnchorPane.bottomAnchor="0.0"
+                                               AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0"/>
+                                        <Label fx:id="nameLabel" text="ペンギン(デブ27円) @penguin_410"
+                                               AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                               AnchorPane.topAnchor="0.0"/>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </HBox>
+                        <Label fx:id="tweetTextLabel" text="僕以外みんな人工知能なんだ...助けてくれ..." wrapText="true"/>
+                        <HBox alignment="CENTER_LEFT" spacing="30.0">
+                            <children>
+                                <Label fx:id="replyLabel" text="Reply"/>
+                                <Label fx:id="retweetLabel" text="RT"/>
+                                <Label fx:id="favoriteLabel" text="Fav"/>
+                            </children>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</fx:root>

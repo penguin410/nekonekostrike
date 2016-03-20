@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="tweetTextArea" onKeyReleased="#onKeyReleased" prefHeight="80.0" prefWidth="300.0" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox VBox.vgrow="NEVER">
+         <children>
+            <Label text="image" />
+            <Label text="placeholder">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <AnchorPane prefHeight="16.0" prefWidth="149.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="textSizeCountLabel" text="140" AnchorPane.rightAnchor="0.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</fx:root>
